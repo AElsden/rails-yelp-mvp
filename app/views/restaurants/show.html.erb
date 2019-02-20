@@ -2,6 +2,10 @@
 <p>Find us at: <%= @restaurant[:address] %></p>
 <p>Food: <%= @restaurant[:category]%></p>
 <p>Phone: <%= @restaurant[:phone_number]%></p>
+<div class='btn btn-primary'>
+<%= link_to "Create review", new_restaurant_review_path(@restaurant) %>
+</div>
 
+<div class='btn btn-primary'>
 <%= link_to 'back to list', restaurants_path %>
-
+</div>
